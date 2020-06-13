@@ -1,3 +1,3 @@
-# Proposed CFR Ambulance Service in myResponse App
+# Proposed CFR Ambulance Service in myResponder App
 
-
+Our group would like to propose a new feature in myResponder app that would alert certified CFRs if there is a non-emergency patient nearby that requires transport to the hospital. When a case is classified as a non-emergency case by a SCDF staff,the speech from the caller is processed by Node RED which uses IBM cloud's speech to text to convert the speech to an address in text. The address given, now in text, will go through IBM Natural Language Understanding API for the system to identify the location coordinates. The coordinates will be used by Google Maps API to search for all nearby available CFRs that are of 1km radius of the location. Upon identifying the CFRs, a notification will be sent out to these users by IBM Cloud Notifications API regarding the situation. If a CFR were to accept the role, more information such as the detailed address and patient's name wll be provided in the app.
