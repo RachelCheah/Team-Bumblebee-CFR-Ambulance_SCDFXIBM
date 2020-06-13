@@ -1,0 +1,45 @@
+var chathistory = flow.get("history")||[];
+var chatstart = flow.get("chatstart");
+var who;
+
+if( typeof(chatstart) == 'undefined' ) { chatstart = true ; }
+if(chatstart===true) {
+    who = "Q";
+} else {
+    who = "A";
+}
+
+var newchatentry = {"who":"","text":""};
+if( chathistory.length === 0 ) {
+    // First chat, init the table
+    newchatentry = {"who":"A","text":"What is your location"};
+
+    // Add the question, if its not a Clear Chat button press
+    if( msg.payload.length ) { 
+        chathistory.push(newchatentry);
+        newchatentry = {"who":"Q","text":msg.payload}; 
+    }
+} else {
+    newchatentry = {"who":who,"text":msg.payload};
+}
+chathistory.push(newchatentry);
+
+msg.payload="<style>";
+msg.payload=msg.payload+"table { width: 488px; margin-top: 10px; }";
+msg.payload=msg.payload+"tr:nth-child(even){background-color: #f2f2f2;}";
+msg.payload=msg.payload+"th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; width: 10%;}";
+msg.payload=msg.payload+"</style>";
+
+msg.payload=msg.payload+"<table id=\"chatbot\" span=100%><tr><th>Chat History</th></tr>";
+for( i = 0; i < chathistory.length; i++ ) {
+    if( chathistory[i].who == "Q" ) {
+        msg.payload = msg.payload + "<tr><td><p style=\"text-align:right;\">"+chathistory[i].text+"</p></td></tr>" ;
+    } else {
+        msg.payload = msg.payload + "<tr><td><p style=\"text-align:left;background-color:#f2f2f2;\">" +chathistory[i].text+"</p></td></tr>" ;
+    }
+}
+
+msg.payload = msg.payload + "</table>";
+flow.set("chatstart",false);
+flow.set("history",chathistory);
+return msg;
