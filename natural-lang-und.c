@@ -19,4 +19,5 @@ curl -X POST -u "apikey:insertKey" \
 "insertURL/instances/71dd1904-c98f-4be6-bbdf-762ea3220067/v1/analyze?version=2019-07-12"
 
 /*under targets, strings of each possible address in database of singapore address will be included.
-/*through this, if the keyword of that address is identified in "text", this keyword will be raised as the location of caller.
+/*through this, if the input "text" matches a keyword under "targets", this keyword will be raised as the location of caller,
+/*and transmitted to Google Maps API
