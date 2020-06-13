@@ -47,7 +47,7 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 
 Note: For data analysis, locations in Singapore are split into districts according to [this](https://www.singaporeexpats.com/housing-in-singapore/singapore-district-guide.htm).
 
-[finalflow.png](https://postimg.cc/kDCTz2CL)
+[![finalflow.png](https://i.postimg.cc/nVjNsmPV/finalflow.png)](https://postimg.cc/kDCTz2CL)
 
 1. Collect data on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
 
