@@ -29,7 +29,19 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 
 ### Architecture of Solution
 
-1. User 
+#### Procedure when non-emergency patient needs to use service
+
+1. Caller dials 995, verbally explains situation & location, classified as Non-Emergency Patient by SCDF Staff
+
+2. IBM Cloud Speech to Text API converts caller's speech to text
+
+3. IBM Natural Language Understanding API identifies location of caller based on text
+
+4. Google Maps API identifies all available CFRs (users of myResponder app) in 1km radius of location of caller
+
+5. IBM Cloud Notifications API is used to send a push notification to all available CFRs of situation
+
+6. CFR opens notification to app and accepts or rejects job, is given more information accordingly by myResponder app interface
 
 ### Hyperlink to Detailed Solution
 
