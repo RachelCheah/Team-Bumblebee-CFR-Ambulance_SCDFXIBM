@@ -43,6 +43,25 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 
 6. CFR opens notification to app and accepts or rejects job, is given more information accordingly by myResponder app interface
 
+#### Performing data analytics on app feature to make improvements on CFRs demographic
+
+Note: For data analysis, locations in Singapore are split into districts according to [this](https://www.singaporeexpats.com/housing-in-singapore/singapore-district-guide.htm).
+
+
+
+1. Collect data on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
+
+2. Use Python to refine & manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'
+
+3. Use IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.
+
+4.  Use IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and 'Average Number of Available CFRs'
+
+5. Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
+
+These districts are identified to have an insufficient supply of active CFRs, and should attempt to recruit more CFRs accordingly.
+
+
 ### Hyperlink to Detailed Solution
 
 [Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/DESCRIPTION.md)
