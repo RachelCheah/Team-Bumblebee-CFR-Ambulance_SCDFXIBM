@@ -20,9 +20,9 @@ for(i=0;i<msg.payload.output.generic.length;i++) {
 
 response = createTextLinks(response);
 
-// The news reports will have \n, replace with breaks
+
 msg.payload = response.replace(/(?:\r\n|\r|\n)/g, '<br />');
 
-// The news reports will have http: links. Make them 
+
 
 return msg;
