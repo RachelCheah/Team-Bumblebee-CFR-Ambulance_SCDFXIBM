@@ -1,0 +1,14 @@
+<div id="{{'my_'+$id}}" style="{{'color:'+theme.base_color}}"></div>
+<script>
+(function(scope) {
+  scope.$watch('msg', function(msg) {
+    if (msg) {
+      // Render the chatbot table when msg arrives
+      $("#my_"+scope.$id).html(msg.payload);
+      // scroll to Bottom
+      var elmnt = document.getElementById("chatbot");
+      elmnt.scrollIntoView(false);
+    }
+  });
+})(scope);
+</script>
