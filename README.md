@@ -19,7 +19,7 @@ As of 1st April 2019, SCDF officially announced that it will no longer take non-
 
 #### How can technology help?
 
-Location services technology on smartphones & IoT can be used in real-time to share the data with nearby available smartphone users of the situation faced by the non-emergency patient.
+Location services technology on smartphones can be used in real-time to share the data with nearby available smartphone users of the situation faced by the non-emergency patient.
 
 #### The idea
 
@@ -28,6 +28,8 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 ### Pitch Video
 
 ### Architecture of Solution
+
+1. User 
 
 ### Hyperlink to Detailed Solution
 
