@@ -1,0 +1,28 @@
+function createTextLinks(text) {
+
+  return (text || "").replace(
+    /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
+    function(match, space, url){
+      var hyperlink = url;
+      if (!hyperlink.match('^https?:\/\/')) {
+        hyperlink = 'http://' + hyperlink;
+      }
+      return space + '<a href="' + hyperlink + '">' + url + '</a>';
+    }
+  );
+}
+
+var response = ""
+
+for(i=0;i<msg.payload.output.generic.length;i++) {
+  response = response + msg.payload.output.generic[i].text ;
+}
+
+response = createTextLinks(response);
+
+// The news reports will have \n, replace with breaks
+msg.payload = response.replace(/(?:\r\n|\r|\n)/g, '<br />');
+
+// The news reports will have http: links. Make them 
+
+return msg;
