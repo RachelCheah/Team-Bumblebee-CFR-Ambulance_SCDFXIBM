@@ -26,7 +26,7 @@ Location services technology on smartphones can be used in real-time to share th
 SCDF currently uses an app called myResponder to encourage certified Community First Responders (CFRs) to respond to nearby fire and medical cases, and thereby save lives. We propose creating an extended feature of myResponder that alerts nearby certified CFRs of the situation, encouraging them to help transport non-emergency patients to hospitals, should the non-emergency patient require assistance.
 
 ### Pitch Video
-
+[Youtube Link to Pitch Video](https://youtu.be/JvFl646ZUto)
 ### Architecture of Solution
 
 #### Procedure when non-emergency patient needs to use service
