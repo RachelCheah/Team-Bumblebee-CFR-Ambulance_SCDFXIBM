@@ -30,11 +30,22 @@ Further refinement to CFR community using data analysis :
 
 [![Untitled-Document-2.png](https://i.postimg.cc/Sxs6s6gD/Untitled-Document-2.png)](https://postimg.cc/bs7DVtct)
 
-Data is to be collected on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
+Data is to be first collected on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
 
-data-analysis/incident-stats-scdf.csv
+https://github.com/joeybahh/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/incident-stats-scdf.csv
 
-Python is used to refine and manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'. The modified data will be processed by IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.IBM Watson Studio's Data Visualisation tools is also used to form a second graph which expresses relationship between each 'District Number' and 'Average Number of Available CFRs' as well.Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
+
+Python is used to refine and manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'. 
+https://github.com/joeybahh/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/analysis-func.py
+https://github.com/joeybahh/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/modified.csv
+
+The modified data will be processed by IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.
+https://github.com/joeybahh/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis.png
+
+IBM Watson Studio's Data Visualisation tools is also used to form a second graph which expresses relationship between each 'District Number' and 'Average Number of Available CFRs' as well.
+https://github.com/joeybahh/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis-2.png
+
+Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
 
 These districts are identified to have an insufficient supply of active CFRs, and should attempt to recruit more CFRs accordingly.
 
