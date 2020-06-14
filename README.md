@@ -74,7 +74,11 @@ These districts are identified to have an insufficient supply of active CFRs, an
 
 ## Prerequisites
 
-curl -V
+Install curl for Mac OS by entering into Terminal:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+
 
 ### Built with
 
