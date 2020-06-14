@@ -26,3 +26,14 @@ Results:
 
 Our group hopes that through this service,the community will not have to worry about transport in the event where they need medical aid but do not have access to transport.
 
+Further refinement to CFR community using data analysis :
+
+[![Untitled-Document-2.png](https://i.postimg.cc/Sxs6s6gD/Untitled-Document-2.png)](https://postimg.cc/bs7DVtct)
+
+Data is to be collected on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.Python is used to refine and manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'. The modified data will be processed by IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.IBM Watson Studio's Data Visualisation tools is also used to form a second graph which expresses relationship between each 'District Number' and 'Average Number of Available CFRs' as well.Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
+
+These districts are identified to have an insufficient supply of active CFRs, and should attempt to recruit more CFRs accordingly.
+
+
+
+
