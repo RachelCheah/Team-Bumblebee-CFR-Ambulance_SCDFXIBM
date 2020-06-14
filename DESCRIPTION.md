@@ -32,19 +32,19 @@ Further refinement to CFR community using data analysis :
 
 Data is to be first collected on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
 
-https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/incident-stats-scdf.csv
+[Click here.] (https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/incident-stats-scdf.csv) for an example on the raw data first collected.
 
 
 Python is used to refine and manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'. 
-https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/analysis-func.py
+[Click here.] (https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/analysis-func.py) for sample python code used.
 
-https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/modified.csv
+[Click here.] (https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/modified.csv) for refined data.
 
 The modified data will be processed by IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.
-https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis.png
+[Click here.] (https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis.png) for graph 1.
 
 IBM Watson Studio's Data Visualisation tools is also used to form a second graph which expresses relationship between each 'District Number' and 'Average Number of Available CFRs' as well.
-https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis-2.png
+[Click here.] (https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis-2.png) for graph 2
 
 Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
 
