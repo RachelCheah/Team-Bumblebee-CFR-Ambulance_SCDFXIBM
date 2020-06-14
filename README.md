@@ -29,6 +29,8 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 [Youtube Link to Pitch Video](https://youtu.be/JvFl646ZUto)
 ### Architecture of Solution
 
+[![Workflow-Diag.jpg](https://i.postimg.cc/9XB3qtWq/Workflow-Diag.jpg)](https://postimg.cc/8ssX2vf1)
+
 #### Procedure when non-emergency patient needs to use service
 
 1. Caller dials 995, verbally explains situation & location, classified as Non-Emergency Patient by SCDF Staff
