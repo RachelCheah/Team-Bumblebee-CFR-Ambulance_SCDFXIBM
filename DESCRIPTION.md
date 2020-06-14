@@ -9,10 +9,7 @@ When a case is classified as a non-emergency case by a SCDF staff,the details gi
 When a speech is processed, a request will be sent to the Speech to Text node.
 
 [![Step2.png](https://i.postimg.cc/WFmycWgf/Step2.png)](https://postimg.cc/WFmycWgf)
-Conversation service will be activated through Watson Assistant.
-
-[![Step3.png](https://i.postimg.cc/2bNtJRbZ/Step3.png)](https://postimg.cc/2bNtJRbZ)
-Text to Speech can also be requested for any required response to the user.
+Conversation service will be activated through Watson 
 
 [![Final-step.png](https://i.postimg.cc/4YMq6hXw/Final-step.png)](https://postimg.cc/4YMq6hXw)
 An example of how the chat will look like after the microphone picks up an address. The text will be formed in the chat to be picked up by the IBM Natural Language Understanding API.
