@@ -3,7 +3,7 @@ Our group would like to propose a new feature in myResponder app that would aler
 
 Step 1: Obtaining address of patient
 
-When a case is classified as a non-emergency case by a SCDF staff,the details given by the caller through the call will be processed by Node RED which uses IBM cloud's speech to text to convert the speech to an address in text. The address given, now in text, will go through IBM Natural Language Understanding API for the system to identify the location coordinates. 
+When a case is classified as a non-emergency case by a SCDF staff,the details given by the caller through the call will be processed by Node RED which uses IBM cloud's speech to text to convert the speech to an address in text. 
 
 [![Step1.png](https://i.postimg.cc/KKMVJvzb/Step1.png)](https://postimg.cc/KKMVJvzb)
 When a speech is processed, a request will be sent to the Speech to Text node.
@@ -13,6 +13,8 @@ Conversation service will be activated through Watson
 
 [![Final-step.png](https://i.postimg.cc/4YMq6hXw/Final-step.png)](https://postimg.cc/4YMq6hXw)
 An example of how the chat will look like after the microphone picks up an address. The text will be formed in the chat to be picked up by the IBM Natural Language Understanding API.
+
+The address given, now in text, will go through IBM Natural Language Understanding API for the system to identify the location coordinates. [Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/natural-lang-und.c) for a sample code on Natural Language Understanding.
 
 
 Step 2: Finding CFRs
@@ -32,19 +34,19 @@ Further refinement to CFR community using data analysis :
 
 Data is to be first collected on all incidents when a non-emergency patient is redirected by 995 to the CFR Ambulance feature of the my Responder app.
 
-[Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/incident-stats-scdf.csv) for an example on the raw data first collected.
+[Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/incident-stats-scdf.csv) for an example on the raw data first collected.
 
 
 Python is used to refine and manipulate raw data to show each District Number's corresponding '% of Successful Responses' and 'Average Number of Available CFRs'. 
-[Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/analysis-func.py) for sample python code used.
+[Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/analysis-func.py) for sample python code used.
 
-[Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/modified.csv) for refined data.
+[Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/modified.csv) for refined data.
 
 The modified data will be processed by IBM Watson Studio's Data Visualisation tools to express relationship between each 'District Number' and '% of Successful Responses'.
-[Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis.png) for graph 1.
+[Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis.png) for graph 1.
 
 IBM Watson Studio's Data Visualisation tools is also used to form a second graph which expresses relationship between each 'District Number' and 'Average Number of Available CFRs' as well.
-[Click here.](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis-2.png) for graph 2
+[Click here](https://github.com/shreyasriram4/Bumblebee-CFR-Ambulance_SCDFXIBM/blob/master/data-analysis/dataview-vis-2.png) for graph 2
 
 Based on the two graphs, identify District Numbers with '% of Successful Responses' < 0.5 OR 'Average Number of Available CFRs' < 1.5. 
 
