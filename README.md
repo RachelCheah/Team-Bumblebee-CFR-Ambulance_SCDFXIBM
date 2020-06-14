@@ -31,6 +31,8 @@ SCDF currently uses an app called myResponder to encourage certified Community F
 
 #### Procedure when non-emergency patient needs to use service
 
+[![Workflow-Diag.jpg](https://i.postimg.cc/9XB3qtWq/Workflow-Diag.jpg)](https://postimg.cc/8ssX2vf1)
+
 1. Caller dials 995, verbally explains situation & location, classified as Non-Emergency Patient by SCDF Staff
 
 2. IBM Cloud Speech to Text API converts caller's speech to text
